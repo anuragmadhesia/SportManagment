@@ -1,0 +1,87 @@
+﻿body { background-color: lightgrey; }
+
+.shoji {  overflow-x: hidden; }    
+
+.shoji > .shoji-rail {
+    height: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.shoji > .shoji-rail > .shoji-panel {
+    display: none;
+    width: 265px;
+}
+
+.shoji > .shoji-rail > .shoji-panel.shoji-panel-left { float: left !important; }
+
+.shoji > .shoji-rail > .shoji-panel.shoji-panel-right { float: right !important; }
+
+.shoji > .shoji-door { position: relative; }
+
+.navbar-toggle-left,
+.navbar-toggle-right {
+    margin: 5px;
+}
+
+.navbar-toggle-left { float: left !important; }
+
+.navbar-toggle-right { float: right !important; }
+
+.navbar-banner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-banner > .navbar-brand {
+    float: none !important;
+    line-height: 50px;
+}
+
+.square { border-radius: 0 !important; }
+
+.content { background-color: white; }body { background-color: lightgrey; }
+
+.shoji {  overflow-x: hidden; }    
+
+.shoji > .shoji-rail {
+    height: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.shoji > .shoji-rail > .shoji-panel {
+    display: none;
+    width: 265px;
+}
+
+.shoji > .shoji-rail > .shoji-panel.shoji-panel-left { float: left !important; }
+
+.shoji > .shoji-rail > .shoji-panel.shoji-panel-right { float: right !important; }
+
+.shoji > .shoji-door { position: relative; }
+
+.navbar-toggle-left,
+.navbar-toggle-right {
+    margin: 5px;
+}
+
+.navbar-toggle-left { float: left !important; }
+
+.navbar-toggle-right { float: right !important; }
+
+.navbar-banner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-banner > .navbar-brand {
+    float: none !important;
+    line-height: 50px;
+}
+
+.square { border-radius: 0 !important; }
+
+.content { background-color: white; }
