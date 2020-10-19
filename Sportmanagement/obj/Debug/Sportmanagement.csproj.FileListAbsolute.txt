@@ -1,0 +1,58 @@
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Sportmanagement.dll.config
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Sportmanagement.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Sportmanagement.pdb
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Antlr3.Runtime.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\EntityFramework.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Microsoft.Web.Infrastructure.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Newtonsoft.Json.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Net.Http.Formatting.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Http.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Http.WebHost.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Mvc.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Optimization.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Providers.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Razor.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Deployment.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Razor.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\WebGrease.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\EntityFramework.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\Newtonsoft.Json.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Net.Http.Formatting.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Http.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Http.WebHost.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Mvc.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.Razor.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Deployment.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Razor.xml
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\obj\Debug\Sportmanagement.csprojResolveAssemblyReference.cache
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\obj\Debug\Sportmanagement.dll
+c:\users\prem\documents\visual studio 2013\Projects\Sportmanagement\Sportmanagement\obj\Debug\Sportmanagement.pdb
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Sportmanagement.dll.config
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Sportmanagement.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Sportmanagement.pdb
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Antlr3.Runtime.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\EntityFramework.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Microsoft.Web.Infrastructure.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Newtonsoft.Json.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.Mvc.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.Optimization.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.Providers.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.Razor.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Deployment.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Razor.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\WebGrease.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\EntityFramework.xml
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\Newtonsoft.Json.xml
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.Mvc.xml
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.Razor.xml
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.xml
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Deployment.xml
+E:\Arcane C#\Sportmanagement\Sportmanagement\bin\System.Web.WebPages.Razor.xml
+E:\Arcane C#\Sportmanagement\Sportmanagement\obj\Debug\Sportmanagement.csprojResolveAssemblyReference.cache
+E:\Arcane C#\Sportmanagement\Sportmanagement\obj\Debug\Sportmanagement.dll
+E:\Arcane C#\Sportmanagement\Sportmanagement\obj\Debug\Sportmanagement.pdb
