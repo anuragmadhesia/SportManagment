@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Views/Shared/GenralMasterPage.cshtml";
+}
+
+<div class="row text text-center">
+    <label style="margin-top:10px; color:Maroon; font-family: 'Bell MT';font-size:25px;font-weight:100;">Contact Us</label>
+<hr />
+</div>
+<div class="row" >
+    <div class="col-sm-12" >
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="border:1px solid maroon">
+            <div class="col-sm-12">
+                <form action="/Home/ContactUs" method="post">
+                    <div class="col-sm-6">
+                        <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Name" name="txtname"/>
+                        <label style="color:Maroon; font-family: 'Bell MT';font-size:20px;" >Email</label>
+                        <input type="email" class="form-control" placeholder="Enter Email" name="txtemail" />
+                        <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Mobile</label>
+                        <input type="number" class="form-control" placeholder="Enter Mobile" name="txtmobile"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Message</label>
+                        <textarea style="height:170px;" class="form-control" placeholder="Enter Message" name="txtmsg"></textarea><br />
+
+                        <input type="submit" class="btn btn-danger" value="Submit Now" />
+                        <br /><br />
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="col-sm-1"></div>
+
+    </div>
+   
+</div>
+<hr />

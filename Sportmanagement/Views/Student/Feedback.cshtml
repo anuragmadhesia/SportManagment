@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Views/Shared/StudentMasterPage.cshtml";
+}
+<style>
+    .fa-star {
+    font-size:40px;
+    color:blue;
+    padding-left:4%;
+    cursor:pointer;
+    }
+</style>
+
+
+<script>
+    $(document).ready(function () {
+        $("#sp1").text(1); $("#sp2").text(2); $("#sp3").text(3); $("#sp4").text(4); $("#sp5").text(5);
+        $("#sp1,#sp2,#sp3,#sp4,#sp5").hide();
+        $("#s1").click(function () {
+            var v = $("#sp1").text();
+            $("#s1").css("color", "darkred");
+            $("#s2,#s3,#s4,#s5").css("color", "blue");
+            $("#txtrate").val(v);
+        })
+        $("#s2").click(function () {
+            var v = $("#sp2").text();
+            $("#s1,#s2").css("color", "darkred");
+            $("#s3,#s4,#s5").css("color", "blue");
+            $("#txtrate").val(v);
+        })
+        $("#s3").click(function () {
+            var v = $("#sp3").text();
+            $("#s1,#s2,#s3").css("color", "darkred");
+            $("#s4,#s5").css("color", "blue");
+            $("#txtrate").val(v);
+        })
+        $("#s4").click(function () {
+            var v = $("#sp4").text();
+            $("#s1,#s2,#s3,#s4").css("color", "darkred");
+            $("#s5").css("color", "blue");
+            $("#txtrate").val(v);
+        })
+        $("#s5").click(function () {
+            var v = $("#sp5").text();
+            $("#s1,#s2,#s3,#s4,#s5").css("color", "darkred");
+            $("#txtrate").val(v);
+        })
+    })
+</script>
+<div class="col-sm-12">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 panel panel-body" >
+        <h3 class="text-center">Write Your Valuable feedback</h3>
+        <hr />
+        <form action="/Student/Feedback" method="post">
+            Rating<br /> 
+            <span class="fa fa-star" id="s1"></span>
+            <span class="fa fa-star" id="s2"></span>
+            <span class="fa fa-star" id="s3"></span>
+            <span class="fa fa-star" id="s4"></span>
+            <span class="fa fa-star" id="s5"></span>
+            <span class="fa fa-star" id="sp1"></span>
+            <span class="fa fa-star" id="sp2"></span>
+            <span class="fa fa-star" id="sp3"></span>
+            <span class="fa fa-star" id="sp4"></span>
+            <span class="fa fa-star" id="sp5"></span>
+            <br />
+            Write Reviews
+            <textarea style="height:160px" class="form-control" name="txtmsg"></textarea>
+            <input type="hidden" name="txtrate" id="txtrate" />
+            <br />
+            <input type="submit" class="form-control btn-success" value="Submit Now" />
+        </form>
+    </div>
+    <div class="col-sm-4"></div>
+</div>

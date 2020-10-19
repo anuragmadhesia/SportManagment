@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "ViewRegistration";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+<link href="~/Content/css/akash.css" rel="stylesheet" />
+<script src="~/Content/js/akash.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#example").DataTable();
+    })
+</script>
+@using System.Data;
+@using System.Data.SqlClient;
+@using Sportmanagement.Models
+<h3 class="text-center">ViewRegistration</h3>
+<hr />
+@{
+    string query = "select * from tbl_registration";
+    DtabaseAdministrator db = new DtabaseAdministrator();
+    DataTable dt = db.DisplayAllRecords(query);
+    if(dt.Rows.Count>0)
+    {
+        <table class="table table-responsive" id="example">
+            <thead>
+                <tr style="background:teal;color:white">
+                    <th>SNO</th>
+                    <th>Name</th>
+                    <th>FatherName</th>
+                    <th>Email</th>
+                    <th>Mobile No</th>
+                    <th>AdharNo</th>
+                    <th>Photo</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    <tr>
+                        <td>@dt.Rows[i]["sid"]</td>
+                        <td>@dt.Rows[i]["Name"]</td>
+                        <td>@dt.Rows[i]["Fname"]</td>
+                        <td>@dt.Rows[i]["Email"]</td>
+                        <td>@dt.Rows[i]["mobile"]</td>
+                        <td>@dt.Rows[i]["Adhar"]</td>
+                        <td><img src="~/Content/pic/@dt.Rows[i]["photo"]" style="height:40px;width:40px;" /></td>
+                        <td><a href="/Admin/Delete?del=@dt.Rows[i]["Email"]"><span class="fa fa-trash" style="cursor:pointer"></span></a></td>
+                        <td><a href="/Admin/update?up=@dt.Rows[i]["Email"]"><span class="fa fa-eye" style="cursor:pointer"></span></a></td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    }
+    else
+    {
+        <h2>No Recond found</h2>
+    }
+     
+       
+}
+

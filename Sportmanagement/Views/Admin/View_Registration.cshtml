@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "View_Registration";
+    Layout = "~/Views/Shared/AdminMasterPage.cshtml";
+}
+@using System.Data;
+@using System.Data.SqlClient;
+@using Sportmanagement.Models;
+<link href="~/Content/css/akash.css" rel="stylesheet" />
+<script src="~/Content/js/akash.js"></script>
+<h3 class="text-center">View_Registration</h3>
+<script>
+    $(document).ready(function () {
+        $("#example").DataTable();
+    })
+</script>
+<div class="col-sm-12">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 panel panel-body">
+        @{
+            string query = "select * from tbl_registration";
+            ConnectionManager db = new ConnectionManager();
+            DataTable dt = db.DisplayAllData(query);
+            if(dt.Rows.Count>0)
+            {
+                <table class="table table-responsive" id="example"> 
+                    <thead>
+                        <tr style="background:teal;color:white">
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Father Name</th>
+                            <th>Mobile</th>
+                            <th>Branch</th>
+                            <th>Year</th>
+                            <th>Picture</th>
+                            <th>Delete</th>
+                            <td>Update</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(int i=0;i<dt.Rows.Count;i++)
+                        {
+                              <tr>
+                                  <td>@dt.Rows[i]["name"]</td>
+                                  <td>@dt.Rows[i]["email"]</td>
+                                  <td>@dt.Rows[i]["fname"]</td>
+                                  <td>@dt.Rows[i]["mobile"]</td>
+                                  <td>@dt.Rows[i]["Branch"]</td>
+                                  <td>@dt.Rows[i]["year"]</td>
+                                  
+   <td><img src="~/Content/img/@dt.Rows[i]["picture"]" style="height:40px;width:40px"></td>
+                                  <td><a href="/Admin/Adelete?del=@dt.Rows[i]["email"]"><span class="fa fa-trash"></span></a></td>
+                                  <td><a href="/Admin/Aupdate?up=@dt.Rows[i]["email"]"><span class="fa fa-eye"></span></a></td>
+                              </tr>             
+                        }
+                    </tbody>
+                </table>
+                
+            }
+            else
+            {
+                <h3>No Record Available</h3>
+            }
+        }
+    </div>
+    <div class="col-sm-1"></div>
+</div>

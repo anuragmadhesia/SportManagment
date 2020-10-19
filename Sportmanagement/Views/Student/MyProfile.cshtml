@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "MyProfile";
+    Layout = "~/Views/Shared/StudentMasterPage.cshtml";
+}
+@using System.Data;
+@using System.Data.SqlClient;
+@using Sportmanagement.Models;
+@{
+    string id=Session["uid"]+"";
+    string query = "select * from tbl_registration where email='" + id + "'";
+    ConnectionManager db = new ConnectionManager();
+    DataTable dt = db.DisplayAllData(query);
+    if(dt.Rows.Count>0)
+    {
+<div class="row text text-center" style="min-height:20px;">
+    <label style="margin-top:10px; color:Maroon; font-family: 'Bell MT';font-size:25px;font-weight:100;">My Profile</label>
+
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" >
+            <div class="col-sm-6">
+                <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Name</label>
+                <input type="text" class="form-control" value="@dt.Rows[0]["name"]" id="txtname"/>
+                <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Father Name</label>
+                <input type="text" class="form-control" value="@dt.Rows[0]["fname"]" id="txtfname"/>
+                <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Email</label>
+                <input type="email" class="form-control" id="txtemail" value="@dt.Rows[0]["email"]" />
+                <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Mobile</label>
+                <input type="number" class="form-control" value="@dt.Rows[0]["mobile"]" id="txtmobile"/>
+                <br />
+                <input type="submit" class="btn btn-danger" value="Edit Profile" />
+                <input type="submit" class="btn btn-info" value="Update Profile" /><br />
+            </div>
+            <div class="col-sm-6">
+    <img src="~/Content/img/@dt.Rows[0]["picture"]" class="img img-thumbnail" style="height:250px;width:100%"/><br /><br />
+<h4 id="lbl"></h4>
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+<hr />
+}
+}
+<script>
+    $(document).ready(function () {
+        $(".form-control").attr("ReadOnly", true);
+        $(".btn-info").hide();
+        $(".btn-danger").click(function () {
+            $(".btn-info").show();
+            $(".btn-danger").hide();
+            $(".form-control").attr("ReadOnly", false);
+            $("#txtemail").attr("ReadOnly", true);
+        })
+        $(".btn-info").click(function () {
+            var name = $("#txtname").val();
+            var fname = $("#txtfname").val();
+            var email = $("#txtemail").val();
+            var mobile = $("#txtmobile").val();
+            $.ajax({
+                type: "Post",
+                url: "/Student/profile",
+                data: { Name: name, Fname: fname, Email: email, Mobile: mobile },
+                success: function (data) {
+                    $("#lbl").html(data).fadeOut(8000).fadeIn(3000);
+                    $(".btn-info").hide();
+                    $(".form-control").attr("ReadOnly", true);
+                }
+
+            })
+            $(".btn-danger").show();
+        })
+    })
+</script>

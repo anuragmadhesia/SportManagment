@@ -1,0 +1,139 @@
+﻿<link href="~/Content/css/admimaster.css" rel="stylesheet" />
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+<script src="~/Content/js/jquery.js"></script>
+<script src="~/Content/js/bootstrap.min.js"></script>
+<script src="~/Content/js/adminmaster.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="shoji" id="shoji">
+    <div class="shoji-rail">
+        <div class="shoji-panel shoji-panel-left" >
+            <div class="panel-group" id="sidebar">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-first">Menu 1</a>
+                        </h4>
+                    </div>
+                    <ul id="sidebar-first" class="list-group panel-collapse collapse">
+                        <li class="list-group-item"><a href="#">Menu Item 1</a></li>
+                        <li class="list-group-item"><a href="#">Menu Item 2</a></li>
+                        <li class="list-group-item"><a href="#">Menu Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-second">Menu 2</a>
+                        </h4>
+                    </div>
+                    <ul id="sidebar-second" class="list-group panel-collapse collapse">
+                        <li class="list-group-item"><a href="#">Menu Item 1</a></li>
+                        <li class="list-group-item"><a href="#">Menu Item 2</a></li>
+                        <li class="list-group-item"><a href="#">Menu Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-third">Menu 3</a>
+                        </h4>
+                    </div>
+                    <ul id="sidebar-third" class="list-group panel-collapse collapse">
+                        <li class="list-group-item"><a href="#">Menu Item 1</a></li>
+                        <li class="list-group-item"><a href="#">Menu Item 2</a></li>
+                        <li class="list-group-item"><a href="#">Menu Item 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="shoji-panel shoji-panel-right">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">Log off</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="shoji-door">
+        <div class="content">
+            <nav class="navbar navbar-default square" role="navigation" id="navbar" style="background:TEAL;color:white">
+                <div class="navbar-banner" style="color:white">
+                    <a href="#" class="navbar-brand" style="color:white">ADMIN ZONE</a>
+                </div>
+                <div class="navbar-header" style="color:white">
+                    <button type="button" class="navbar-toggle navbar-toggle-left" data-slide="right">
+                        <i class="glyphicon glyphicon-th-large"></i>
+                    </button>
+                    <button type="button" class="navbar-toggle navbar-toggle-right" data-slide="left">
+                        <i class="glyphicon glyphicon-cog"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" style="color:white" class="dropdown-toggle" data-toggle="dropdown">Welcome, ADMIN <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">LOGOUT</a></li>
+                                <li class="divider" />
+                                <li><a href="#">CHANGEPASSWORD</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           
+                <div class="row">
+                    <div class="hidden-xs col-sm-2" style="background:teal;color:white">
+                        <div class="panel-group">
+                            <div class="panel panel-default" >
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">HOME</h4>
+                                </div>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="#">DASHBOARD</a></li>
+                                   
+                                </ul>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">VIEW DETAILS</h4>
+                                </div>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="/Admin/ViewRegistration">REGISTRATION DETAILS</a></li>
+                                    <li><a href="#">FEEDBACK DETAILS</a></li>
+                                    <li><a href="#">ENQUIRY DETAILS</a></li>
+                                </ul>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">ADD OPTION</h4>
+                                </div>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="#">ADD NOTIFICATION</a></li>
+                                    <li><a href="#">ADD WINNER</a></li>
+                                   
+                                </ul>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">SETTINGS</h4>
+                                </div>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="#">CHANGE PASSWORD</a></li>
+                                    <li><a href="#">LOGOUT</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10">
+                        @RenderBody()
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>

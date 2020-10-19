@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/hover-min.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row" style="min-height:120px;">
+        <div class="col-sm-12">
+            <div class="col-sm-2" style="min-height:120px;">
+                <img src="~/Content/Image/img4.jpg" style="height:120px; width:100%" />
+            </div>
+            <div class="col-sm-10 text text-center" >
+                <label style=" color:Maroon; font-family: 'Bell MT';font-size:50px;">Welcome In Student Zone</label>
+            </div>
+        </div>
+
+    </div>
+        <div class="row" style="min-height:5px;"></div>
+        <div class="row">
+            <nav class="navbar navbar-inverse" style="background-color:teal">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/Student/Index" style="margin-left:120px;font-family:'Times New Roman';font-size:20px;color:white;">Home</a></li>
+                        <li><a href="/Student/MyProfile" style="font-family:'Times New Roman';font-size:20px;color:white;">MY profile</a></li>
+                        <li><a href="/Student/Complain" style="font-family:'Times New Roman';font-size:20px;color:white;">Complain</a></li>
+                        <li><a href="/Student/Feedback" style="font-family:'Times New Roman';font-size:20px;color:white;">Feedback</a></li>
+                        <li><a href="/Student/Changepassword" style="font-family:'Times New Roman';font-size:20px;color:white;">Change Password</a></li>
+                        <li><a href="/Student/Logout" style="font-family:'Times New Roman';font-size:20px;color:white;">Logout</a></li>
+
+                       
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+    <div class="row" style="min-height:300px">
+        @RenderBody()
+    </div>
+        <div class="row text text-center" style="min-height:50px;background-color:black;">
+            <label style="margin-top:10px; color:white; font-family: 'Bell MT';font-size:25px;font-weight:100;">Copyright ©By Arcane Programming Infotech Lucknow</label>
+        </div>
+        </div>
+</body>
+</html>

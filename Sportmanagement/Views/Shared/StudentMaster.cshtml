@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/hover-min.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-3"><img src="~/Content/image/im4.png" style="height:50px;width:50px"/> Hi! Aman</div>
+                <div class="col-sm-9">Welcome in StudentZone Of SMS</div>
+            </div>
+           <div class="row">
+               <a href="/Student/Dashboard">Dashboard</a>
+               <a href="/Student/Myprofile">My Profile</a>
+               <a href="/Student/Changepassword">Change Password</a>
+               <a href="/Student/feedback">Feedback</a>
+               <a href="/Student/logout">Logout</a>
+           </div>
+            <div class="row" style="min-height:300px">
+                @RenderBody()
+            </div>
+            <div class="row">
+                <div class="col-sm-12">Footer</div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

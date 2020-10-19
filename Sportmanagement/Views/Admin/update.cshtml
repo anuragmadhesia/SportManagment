@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "update";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+
+<h2>update</h2>
+<div class="col-sm-12">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+        <form action="/Admin/update" method="post">
+            <input type="hidden" name="txtemail" class="form-control" value="@ViewBag.email" />
+     Name
+        <input type="text" name="txtname" class="form-control" value="@ViewBag.name" />
+        Father Name
+        <input type="text" name="txtfname" class="form-control" value="@ViewBag.fname" />
+        Mobile No
+        <input type="text" name="txtmobile" class="form-control" value="@ViewBag.mobile" />
+        Adhar
+        <input type="text" name="txtadhar" class="form-control" value="@ViewBag.adhar" />
+           
+            <br />
+            <input type="submit" class="btn btn-danger" value="Update" /> 
+            </form>
+    </div>
+
+</div>

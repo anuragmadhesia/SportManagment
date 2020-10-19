@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/GenralMasterPage.cshtml";
+}
+
+<div class="row text text-center" style="min-height:20px;">
+    <label style="margin-top:10px; color:Maroon; font-family: 'Bell MT';font-size:25px;font-weight:100;">Login</label>
+    
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="col-sm-4"></div>
+
+        <div class="col-sm-4" style="border:1px solid maroon">
+            <form action="/Home/Login" method="post">
+                <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Email</label>
+                <input type="email" class="form-control" placeholder="Enter Email" name="txtuserid"/>
+                <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Password</label>
+                <input type="password" class="form-control" placeholder="Enter Password" name="txtpassword" />
+                <br />
+                <input type="submit" class="form-control btn btn-success" value="Login" /><br /><br />
+            </form>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+<hr />

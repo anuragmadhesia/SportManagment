@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/GenralMasterPage.cshtml";
+}
+
+<div class="row" style="min-height:20px;"></div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-9" style="min-height:300px;border:1px solid maroon;">
+            <div class="col-sm-12  text text-center"  style="min-height:30px;background-color:maroon;">
+                <label style="margin-top:10px; color:white; font-family: 'Bell MT';font-size:25px;font-weight:100;">Registration Form</label>
+            </div><br />
+            <div class="col-sm-12">
+                <div class="col-sm-4">
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Name Here" />
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Father_Name</label>
+                    <input type="email" class="form-control" placeholder="Enter Father_Name Here" />
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Email</label>
+                    <input type="email" class="form-control" placeholder="Enter Email Here" />
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Mobile</label>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Here" />
+                    <br />
+                </div>
+                <div class="col-sm-4">
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Branch</label>
+
+                    <select class="form-control">
+                        <option value="Branch">----- Select Branch-----</option>
+                        <option value="Branch"> Computer Science &Engineering </option>
+                        <option value="Branch"> Information Technology</option>
+                        <option value="Branch"> Civil Engineering</option>
+                        <option value="Branch"> Electrical Engineering</option>
+                        <option value="Branch"> Electronic  Engineering</option>
+                    </select>
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter Password Here" />
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Confirm_Password</label>
+                    <input type="password" class="form-control" placeholder="Enter Confirm_Password Here" />
+                    <label style=" color:Maroon; font-family: 'Bell MT';font-size:20px;">Gender</label>
+                       <select class="form-control">
+                        <option value="Branch">----- Select Gender-----</option>
+                        <option value="Branch"> Mail </option>
+                        <option value="Branch"> Femail</option>
+                        <option value="Branch"> Other</option>
+                       
+                    </select>
+                 </div>
+                <div class="col-sm-4"></div>
+            </div>
+           
+        </div>
+
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+<br />
